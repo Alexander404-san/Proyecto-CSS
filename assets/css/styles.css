@@ -25,7 +25,7 @@
 .header {
   grid-area: header;
 
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 1.5rem;
 
   animation: slideInFromTop 0.5s ease-out;
 }

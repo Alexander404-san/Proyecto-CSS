@@ -60,6 +60,27 @@ img:hover {
   transform: scale(1.05);
 }
 
+/* figcaption oculto */
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  width: 100%;
+  transform: translateY(150%);
+  transition: transform 0.3s ease 0.1s;
+}
+
+img:hover + figcaption {
+  transform: translateY(0);
+}
+
 /* PERFORMANCE OPTIMIZATIONS */
 /* Usar will-change para optimizar animaciones */
 /*.button:hover,

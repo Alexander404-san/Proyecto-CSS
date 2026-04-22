@@ -362,6 +362,10 @@
   transition: color 0.3s ease 0.2s;
 }
 
+.project__picture {
+  margin: 0 auto;
+}
+
 .project__description {
   margin: 0;
 
