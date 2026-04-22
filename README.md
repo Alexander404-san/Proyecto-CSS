@@ -4,7 +4,7 @@ Portafolio personal desarrollado para presentar mi perfil profesional, habilidad
 
 ## 🌐 Demo
 
-👉 https://alexander404-san.github.io/Proyecto-HTML
+👉 https://alexander404-san.github.io/Proyecto-CSS
 
 ## 👨‍💻 Sobre mí
 
