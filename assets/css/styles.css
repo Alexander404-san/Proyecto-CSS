@@ -1,0 +1,245 @@
+@import url("base.css");
+@import url("layout/hero.css");
+@import url("layout/about.css");
+@import url("layout/projects.css");
+@import url("layout/skills.css");
+@import url("layout/contact.css");
+
+@import url("components.css");
+@import url("animations.css");
+@import url("utilities.css");
+
+/* HOME PAGE */
+
+.home-page {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  gap: 0.5rem;
+}
+
+/* HEADER*/
+
+.header {
+  grid-area: header;
+
+  padding: 2.5rem 0;
+
+  animation: slideInFromTop 0.5s ease-out;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: grid;
+  grid-template-areas: "brand" "nav";
+  gap: 2rem;
+  justify-items: center;
+
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    grid-template-areas: "brand nav";
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+}
+
+.header__brand {
+  grid-area: brand;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .header__brand {
+    align-items: start;
+  }
+}
+
+.header__name {
+  position: relative;
+
+  margin: 0;
+  padding: 0 0.875rem;
+
+  font-size: clamp(1.5rem, 7vw, 2.32rem);
+  color: var(--color-dark-800);
+}
+
+@media (min-width: 768px) {
+  .header__name {
+    font-size: clamp(1.5rem, 3vw, 2.32rem);
+  }
+}
+
+.header__name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background-color: var(--color-primary-400);
+
+  border-radius: var(--radius-full);
+
+  pointer-events: none;
+  animation: pulse-shadow-md 2s ease infinite;
+}
+
+.header__tagline {
+  position: relative;
+
+  padding: 0 0.875rem;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: clamp(0.675rem, 3vw, 0.875rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-dark-400);
+
+  border-radius: var(--radius-md);
+}
+
+@media (min-width: 768px) {
+  .header__tagline {
+    font-size: clamp(0.675rem, 1.4vw, 0.875rem);
+  }
+}
+
+.header__tagline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.75px;
+  background-color: var(--color-primary-400);
+
+  border-radius: var(--radius-full);
+  box-shadow: 0px 0px 8px 0.75px var(--color-primary-400);
+
+  pointer-events: none;
+  animation: pulse-shadow-sm 2s ease infinite;
+}
+
+/* MAIN */
+
+.main {
+  grid-area: main;
+
+  padding: 1rem 0;
+}
+
+.main__container {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "about"
+    "projects"
+    "skills"
+    "contact";
+  gap: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .main__container {
+    padding: 0 1rem;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 1.5rem;
+  padding: 2rem 0;
+  background: var(--gd-footer);
+
+  color: var(--color-light-100);
+  text-align: center;
+
+  animation: slideInFromBottom 0.8s ease-out;
+}
+
+.footer__container {
+  padding: 0 1.25rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 480px) {
+  .footer__nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__nav {
+    gap: 1rem;
+  }
+}
+
+.footer__link {
+  flex: 1;
+
+  max-width: 120px;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+
+  color: var(--color-light-100);
+
+  border: 1px solid transparent;
+
+  transition: transform 0.2s ease;
+}
+
+@media (min-width: 480px) {
+  .footer__link {
+    padding: 0.5rem;
+  }
+}
+
+.footer__link:hover {
+  text-decoration: none;
+  color: var(--color-light-100);
+
+  border: 1px solid var(--color-light-100);
+  border-radius: var(--radius-sm);
+
+  transform: translateY(-2px);
+}
+
+.footer__copyright {
+  margin-bottom: 0.5rem;
+
+  font-size: clamp(0.9rem, 4vw, 1rem);
+  color: var(--color-light-200);
+}
+
+.footer__credits {
+  margin-bottom: 0;
+
+  font-size: clamp(0.675rem, 3vw, 0.875rem);
+  color: var(--color-light-200);
+}
