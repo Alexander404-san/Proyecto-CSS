@@ -60,6 +60,7 @@
 
 .hero__title {
   margin: 0 auto;
+  padding: 0.5rem 0;
 
   font-family: "Lexend";
   font-size: clamp(2.5rem, 11vw, 3.5rem);
