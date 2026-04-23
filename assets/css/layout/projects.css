@@ -23,6 +23,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .projects__container {
+    padding: 0 4rem;
+  }
+}
+
 .projects__title {
   margin: 0 auto;
   padding: 0 1rem;
@@ -41,7 +47,7 @@
 
 .projects__grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }

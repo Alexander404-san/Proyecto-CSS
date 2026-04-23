@@ -43,21 +43,24 @@
 
   --color-light-100: white;
   --color-light-200: #f5f5f5;
+  --color-light-300: #d9d8d8;
   --color-gray-100: #bdbdbd;
   --color-gray-400: #646464;
   --color-gray-500: #4b4b4b;
   --color-dark-400: #313131;
   --color-dark-800: black;
 
-  --color-html-100: #faa263;
+  --color-html-100: #f9aa71;
   --color-html-400: #f97316;
-  --color-css-100: #92deec;
+  --color-css-100: #53d4eb;
   --color-css-400: #06b6d4;
-  --color-js-100: #fadc90;
+  --color-js-100: #fdd162;
   --color-js-400: #fbbf24;
+  --color-seo-100: #0cce6b;
+  --color-seo-400: #00833e;
 
   --skill-start-color: var(--color-gray-100);
-  --skill-middle-color: var(--color-light-200);
+  --skill-middle-color: var(--color-light-300);
 
   --gd-hero: linear-gradient(
     135deg,

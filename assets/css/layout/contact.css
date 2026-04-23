@@ -114,3 +114,15 @@
   bottom: 0;
 }
 
+.contact__form {
+  padding: 1rem;
+}
+
+.contact__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+}

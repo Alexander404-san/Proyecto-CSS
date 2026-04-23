@@ -77,7 +77,7 @@ figcaption {
   transition: transform 0.3s ease 0.1s;
 }
 
-img:hover + figcaption {
+figure:hover figcaption {
   transform: translateY(0);
 }
 

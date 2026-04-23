@@ -35,7 +35,7 @@
       "subtitle subtitle"
       "list learning";
     grid-template-columns: 1fr auto;
-    gap: 1rem 5rem;
+    gap: 1rem 4rem;
 
     padding: 0;
   }
@@ -69,7 +69,11 @@
 }
 
 .skill {
-  padding: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.skill:hover .skill__progress--seo {
+  box-shadow: 0 0 20px 0px var(--color-gray-100);
 }
 
 .skill:hover .skill__progress--html {
@@ -89,7 +93,6 @@
 }
 
 .skill__bar {
-  margin-bottom: 0.5rem;
   height: 1.5rem;
 
   position: relative;
@@ -104,8 +107,7 @@
   height: 100%;
 
   position: relative;
-  top: 0;
-  left: 0;
+
   background: linear-gradient(
     90deg,
     var(--skill-start-color),
@@ -147,7 +149,7 @@
 }
 
 .skill__progress--css {
-  width: 60%;
+  width: 10%;
   --skill-start-color: var(--color-css-400);
   --skill-middle-color: var(--color-css-100);
 
@@ -161,10 +163,19 @@
   --skill-middle-color: var(--color-js-100);
 
   --index: 2;
-  animation-duration: 0.8s;
+  animation-duration: 1.1s;
 }
 
-.skill__percentage {
+.skill__progress--seo {
+  width: 60%;
+
+  --index: 3;
+  animation-duration: 0.9s;
+}
+
+.skill__description {
+  position: relative;
+  bottom: 0;
   font-size: 0.875rem;
 }
 

@@ -156,26 +156,26 @@
               >
             </div>
 
-            <div class="hero__stats">
-              <div class="stat">
+            <ul class="hero__stats">
+              <li class="stat">
                 <span class="stat__number">2+</span>
                 <span class="stat__label"
                   >Meses <br />
                   aprendiendo</span
                 >
-              </div>
-              <div class="stat">
+              </li>
+              <li class="stat">
                 <span class="stat__number">2+</span>
                 <span class="stat__label"
                   >Proyectos <br />
                   completados</span
                 >
-              </div>
-              <div class="stat">
+              </li>
+              <li class="stat">
                 <span class="stat__number">2+</span>
                 <span class="stat__label">Tecnologías</span>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -273,7 +273,7 @@
           <div class="projects__container">
             <h2 class="projects__title">Proyectos</h2>
 
-            <p>
+            <p class="projects__intro">
               A continuación se presentan algunos proyectos desarrollados como
               parte de mi aprendizaje en desarrollo web, enfocados en la
               aplicación de buenas prácticas, optimización y estructura
@@ -283,7 +283,7 @@
             <div class="projects__grid">
               <!-- Proyecto 1 -->
               <article class="project">
-                <header>
+                <header class="project__header">
                   <h3 class="project__title">
                     Formulario de registro con Validaciones HTML
                   </h3>
@@ -294,8 +294,8 @@
                     <img
                       src="assets/img/proyectos/formulario.jpg"
                       alt="Formulario web con múltiples campos y validaciones"
-                      width="300"
-                      height="165"
+                      width="625"
+                      height="253"
                       loading="lazy"
                       decoding="async"
                     />
@@ -326,10 +326,10 @@
                   </li>
                 </ul>
 
-                <div class="project__technologies">
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
-                </div>
+                <ul class="project__technologies">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                </ul>
 
                 <footer class="project__links">
                   <a class="project__link" href="proyectos/formulario.html"
@@ -341,7 +341,7 @@
 
               <!-- Proyecto 2 -->
               <article class="project project--featured">
-                <header>
+                <header class="project__header">
                   <span class="project__badge">Destacado</span>
 
                   <h3 class="project__title">
@@ -354,8 +354,8 @@
                     <img
                       src="assets/img/proyectos/contabilidad.jpg"
                       alt="Captura de pantalla de la landing page de Contabilidad Florez"
-                      width="300"
-                      height="165"
+                      width="425"
+                      height="253"
                       loading="lazy"
                       decoding="async"
                     />
@@ -380,10 +380,10 @@
                   </li>
                 </ul>
 
-                <div class="project__technologies">
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
-                </div>
+                <ul class="project__technologies">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                </ul>
 
                 <footer class="project__links">
                   <a
@@ -397,7 +397,7 @@
 
               <!-- Proyecto 3 -->
               <article class="project">
-                <header>
+                <header class="project__header">
                   <h3 class="project__title">
                     Contenido Multimedia y Responsive
                   </h3>
@@ -408,8 +408,8 @@
                     <img
                       src="assets/img/proyectos/multimedia.jpg"
                       alt="Ejemplo de imágenes responsivas y contenido multimedia"
-                      width="300"
-                      height="165"
+                      width="425"
+                      height="248"
                       loading="lazy"
                       decoding="async"
                     />
@@ -443,15 +443,15 @@
                   </li>
                 </ul>
 
-                <div class="project__technologies">
-                  <span class="tag">HTML5</span>
-                  <span class="tag">CSS3</span>
-                </div>
+                <ul class="project__technologies">
+                  <li class="tag">HTML5</li>
+                  <li class="tag">CSS3</li>
+                </ul>
 
                 <footer class="project__links">
-                  <a class="project__link" href="proyectos/multimedia.html"
-                    >Ver proyecto</a
-                  >
+                  <a class="project__link" href="proyectos/multimedia.html">
+                    Ver proyecto
+                  </a>
                   <a href="#" class="project__link">Ver código</a>
                 </footer>
               </article>
@@ -465,88 +465,47 @@
           <div class="skills__container">
             <h3 class="skills__subtitle">Tecnologías aprendidas</h3>
 
-            <dl class="skills__list">
-              <div class="skill">
-                <dt class="skill__name" id="skill-html">HTML - Avanzado</dt>
-                <dd class="skill__bar">
-                  <meter
-                    min="0"
-                    max="100"
-                    low="30"
-                    high="70"
-                    optimum="90"
-                    value="75"
-                    aria-label="Nivel de HTML: 75%"
-                    class="skill_progress skill__progress--html"
-                  >
-                    75%
-                  </meter>
-                  <p class="skill_percentage">
-                    Maquetación semántica, formularios complejos y optimización
-                    de recursos multimedia.
-                  </p>
-                </dd>
-              </div>
+            <ul class="skills__list">
+              <li class="skill">
+                <h4 class="skill__name" id="skill-html">HTML - Avanzado</h4>
+                <div class="skill__bar">
+                  <div class="skill__progress skill__progress--html"></div>
+                </div>
+                <span class="skill__description">
+                  Maquetación semántica, formularios complejos y optimización de
+                  recursos multimedia.
+                </span>
+              </li>
 
-              <div class="skill">
-                <dt class="skill__name" id="skill-css">CSS - Intermedio</dt>
-                <dd class="skill__bar">
-                  <meter
-                    min="0"
-                    max="100"
-                    low="30"
-                    high="70"
-                    optimum="90"
-                    value="60"
-                    aria-label="Nivel de CSS: 30%"
-                  >
-                    60%
-                  </meter>
-                  <p class="skill_percentage">Responsive.</p>
-                </dd>
-              </div>
+              <li class="skill">
+                <h4 class="skill__name" id="skill-css">CSS - Intermedio</h4>
+                <div class="skill__bar">
+                  <div class="skill__progress skill__progress--css"></div>
+                </div>
+                <span class="skill__description">Responsive</span>
+              </li>
 
-              <div class="skill">
-                <dt class="skill__name" id="skill-js">JS - Basico</dt>
-                <dd class="skill__bar">
-                  <meter
-                    min="0"
-                    max="100"
-                    low="30"
-                    high="70"
-                    optimum="90"
-                    value="10"
-                    aria-label="Nivel de JavaScript: 10%"
-                  >
-                    10%
-                  </meter>
-                  <p class="skill_percentage">Muestreo.</p>
-                </dd>
-              </div>
+              <li class="skill">
+                <h4 class="skill__name" id="skill-js">JS - Basico</h4>
+                <div class="skill__bar">
+                  <div class="skill__progress skill__progress--js"></div>
+                </div>
+                <span class="skill__description">Muestreo</span>
+              </li>
 
-              <div class="skill">
-                <dt class="skill__name" id="skill-seo">
+              <li class="skill">
+                <h4 class="skill__name" id="skill-seo">
                   SEO técnico - Intermedio
-                </dt>
-                <dd class="skill__bar">
-                  <meter
-                    min="0"
-                    max="100"
-                    low="30"
-                    high="70"
-                    optimum="90"
-                    value="60"
-                    aria-label="Nivel de SEO técnico: 60%"
-                  >
-                    10%
-                  </meter>
-                  <p class="skill_percentage">
-                    Optimización semántica, configuración de Meta-tags, gestión
-                    de indexación y posicionamiento orgánico.
-                  </p>
-                </dd>
-              </div>
-            </dl>
+                </h4>
+                <div class="skill__bar">
+                  <div class="skill__progress skill__progress--seo"></div>
+                </div>
+                <span class="skill__description">
+                  Optimización semántica, configuración de Meta-tags, gestión de
+                  indexación y posicionamiento orgánico.
+                </span>
+              </li>
+            </ul>
             <div class="learning u-card-border">
               <h3 class="learning__title">Actualmente aprendiendo:</h3>
               <ul class="learning__list">
@@ -567,8 +526,8 @@
               interesantes.
             </p>
 
-            <div class="contact__methods">
-              <div class="contact__method">
+            <ul class="contact__methods">
+              <li class="contact__method">
                 <h3 class="contact__method-title">💻 GitHub</h3>
                 <a
                   href="https://github.com/Alexander404-san"
@@ -576,9 +535,9 @@
                 >
                   @Alexander404
                 </a>
-              </div>
+              </li>
 
-              <div class="contact__method">
+              <li class="contact__method">
                 <h3 class="contact__method-title">📧 Email</h3>
                 <a
                   href="mailto:alexander404.san@gmail.com"
@@ -586,9 +545,9 @@
                 >
                   alexander404.san@gmail.com
                 </a>
-              </div>
+              </li>
 
-              <div class="contact__method">
+              <li class="contact__method">
                 <h3 class="contact__method-title">💼 LinkedIn</h3>
                 <a
                   href="https://www.linkedin.com/in/alexander404/"
@@ -596,66 +555,72 @@
                 >
                   /in/Alexander404
                 </a>
-              </div>
-            </div>
+              </li>
+            </ul>
 
-            <a href="#" class="button button--primary button--large">
-              📄 Descargar CV (PDF)
-            </a>
-
-            <p>
+            <p class="contact__description">
               Si deseas ponerte en contacto conmigo para oportunidades
               laborales, proyectos o consultas profesionales, puedes enviarme un
               mensaje mediante el siguiente formulario.
             </p>
 
-            <form action="https://formspree.io/f/mgonrdrz" method="POST">
-              <fieldset>
-                <legend>Información de contacto</legend>
+            <form
+              class="contact__form"
+              action="https://formspree.io/f/mgonrdrz"
+              method="POST"
+            >
+              <fieldset class="contact__fieldset">
+                <legend class="contact__legend">Información de contacto</legend>
 
-                <label for="nombre">Nombre:</label><br />
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  required
-                  autocomplete="name"
-                  maxlength="30"
-                  pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
-                  title="No se permiten números, solo letras"
-                  placeholder="Juanito Pérez"
-                />
+                <div class="form__item">
+                  <label class="form__label" for="nombre">Nombre:</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    autocomplete="name"
+                    maxlength="30"
+                    pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$"
+                    title="No se permiten números, solo letras"
+                    placeholder="Juanito Pérez"
+                    class="form__input"
+                  />
+                </div>
 
-                <br /><br />
+                <div class="form__item">
+                  <label class="form__label" for="email">
+                    Correo electrónico:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="ejemplo@dominio.com"
+                    class="form__input"
+                  />
+                </div>
 
-                <label for="email">Correo electrónico:</label><br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  autocomplete="email"
-                  placeholder="ejemplo@dominio.com"
-                />
-
-                <br /><br />
-
-                <label for="mensaje">Mensaje:</label><br />
-                <textarea
-                  id="mensaje"
-                  name="mensaje"
-                  rows="5"
-                  placeholder="Escribe tu mensaje aquí..."
-                  required
-                ></textarea>
+                <div class="form__item">
+                  <label class="form__label" for="mensaje"> Mensaje: </label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje aquí..."
+                    required
+                    class="form__input"
+                  ></textarea>
+                </div>
 
                 <input
                   type="hidden"
                   name="_subject"
                   value="Nuevo mensaje desde portafolio"
+                  class="form__input"
                 />
-
-                <br /><br />
 
                 <button type="reset">Limpiar</button>
                 <button type="submit">Enviar mensaje</button>
@@ -672,11 +637,13 @@
     <footer class="footer">
       <div class="container footer__container">
         <nav class="footer__nav">
-          <a href="#inicio" class="footer__link">Inicio</a>
-          <a href="#sobre-mi" class="footer__link">Sobre mí</a>
-          <a href="#proyectos" class="footer__link">Proyectos</a>
-          <a href="#habilidades" class="footer__link">Habilidades</a>
-          <a href="#contacto" class="footer__link">Contacto</a>
+          <ul class="footer__list">
+            <li><a href="#inicio" class="footer__link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="footer__link">Sobre mí</a></li>
+            <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
+            <li><a href="#habilidades" class="footer__link">Habilidades</a></li>
+            <li><a href="#contacto" class="footer__link">Contacto</a></li>
+          </ul>
         </nav>
 
         <p><strong>Redes de contacto</strong></p>
