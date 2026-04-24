@@ -54,7 +54,6 @@
   margin: 0 auto;
   padding: 0.5rem 0;
 
-  font-family: "Lexend";
   font-size: clamp(2.5rem, 11vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -76,7 +75,7 @@
 }
 
 .hero__description {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 
   line-height: 1.8;
@@ -116,6 +115,7 @@
 .stat__number {
   display: block;
 
+  font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(1.8rem, 8vw, 2rem);
   font-weight: bold;
   text-shadow: 1.5px 1.5px 3px var(--color-dark-800);

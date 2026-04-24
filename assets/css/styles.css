@@ -100,6 +100,7 @@
   padding: 0 0.875rem;
   margin: 0;
 
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: clamp(0.7rem, 3vw, 0.775rem);
   letter-spacing: 0.05em;
@@ -120,7 +121,6 @@
 
   border-radius: var(--radius-full);
   box-shadow: 0px 0px 8px 1px var(--color-primary-400);
-
 
   pointer-events: none;
 }

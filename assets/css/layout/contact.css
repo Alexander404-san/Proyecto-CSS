@@ -58,6 +58,8 @@
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 .contact__method {
