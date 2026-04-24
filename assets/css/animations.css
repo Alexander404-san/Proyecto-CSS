@@ -69,28 +69,6 @@
 }
 
 /* Animación de pulso en sombra */
-@keyframes pulse-shadow-sm {
-  0%,
-  100% {
-    box-shadow: 0px 0px 8px 0.25px var(--color-primary-400);
-  }
-
-  50% {
-    box-shadow: 0px 0px 8px 1px var(--color-primary-400);
-  }
-}
-
-@keyframes pulse-shadow-md {
-  0%,
-  100% {
-    box-shadow: 0px 0px 8px 0.75px var(--color-primary-400);
-  }
-
-  50% {
-    box-shadow: 0px 0px 8px 1.75px var(--color-primary-400);
-  }
-}
-
 @keyframes pulse-shadow-double {
   0%,
   100% {

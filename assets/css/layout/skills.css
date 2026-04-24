@@ -149,7 +149,7 @@
 }
 
 .skill__progress--css {
-  width: 10%;
+  width: 78%;
   --skill-start-color: var(--color-css-400);
   --skill-middle-color: var(--color-css-100);
 
@@ -158,7 +158,7 @@
 }
 
 .skill__progress--js {
-  width: 20%;
+  width: 10%;
   --skill-start-color: var(--color-js-400);
   --skill-middle-color: var(--color-js-100);
 
@@ -167,7 +167,7 @@
 }
 
 .skill__progress--seo {
-  width: 60%;
+  width: 58%;
 
   --index: 3;
   animation-duration: 0.9s;

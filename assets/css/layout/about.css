@@ -15,7 +15,7 @@
     "values";
   gap: 1rem;
 
-  max-width: 850px;
+  max-width: 900px;
 
   padding: 1rem;
   margin: 0 auto;
@@ -235,7 +235,7 @@
 
 @media (min-width: 480px) {
   .values__item {
-    flex: 0 1 194px;
+    flex: 0 1 250px;
 
     padding: 1rem;
   }
