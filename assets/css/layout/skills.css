@@ -179,9 +179,7 @@
   font-size: 0.875rem;
 }
 
-/* ===========================================
-     16. LEARNING
-     =========================================== */
+/* LEARNING */
 .learning {
   grid-area: learning;
   justify-self: center;

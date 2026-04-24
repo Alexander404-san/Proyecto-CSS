@@ -119,9 +119,7 @@
   text-align: center;
 }
 
-/* ===========================================
-     11. QUOTE
-     =========================================== */
+/* 11. QUOTE */
 
 .quote {
   grid-area: quote;
@@ -159,7 +157,6 @@
   border-radius: 0 0 var(--radius-xl) var(--radius-xl);
   background: var(--gd-quote-hover);
   z-index: -1;
-  /* Empezamos invisible */
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -193,9 +190,7 @@
   text-underline-offset: 4px;
 }
 
-/* ===========================================
-     12. VALUES
-     =========================================== */
+/* 12. VALUES */
 
 .values {
   grid-area: values;
