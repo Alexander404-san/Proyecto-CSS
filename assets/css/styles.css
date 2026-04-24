@@ -242,31 +242,59 @@
   justify-content: center;
 
   margin: 0;
-
 }
 
-.footer__networks i {
-    padding: 0.6rem;
-  font-size: 1.6rem;
-  color: var(--color-light-100);
+.network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: var(--radius-md);
+
+  transition: background-color 0.2s ease 0.1s;
 }
 
-.footer__networks:hover {
-background-color: var(--color-light-100);
-border-radius: var(--radius-md);
+.network__link:hover {
+  background-color: var(--color-light-100);
 }
 
+.icon {
+  display: inline-block;
+  width: 80%; /* Ajusta el tamaño que quieras */
+  height: 80%;
+  background-color: var(--color-light-100);
 
-.fa-linkedin:hover {
-  color: #0077b5;
+  transition: background-color 0.3s ease 0.1s;
 }
 
-.fa-github:hover {
-  color: #6e5494;
+.icon-gmail {
+  -webkit-mask-image: url("../icons/gmail.svg");
+  mask-image: url("../icons/gmail.svg");
 }
 
-.fa-envelope:hover {
-  color: #c71610;
+.icon-linkedin {
+  -webkit-mask-image: url("../icons/linkedin.svg");
+  mask-image: url("../icons/linkedin.svg");
+}
+
+.icon-github {
+  -webkit-mask-image: url("../icons/github.svg");
+  mask-image: url("../icons/github.svg");
+}
+
+.footer__networks:hover .icon-gmail {
+  background-color: var(--color-gmail-400);
+}
+
+.footer__networks:hover .icon-linkedin {
+  background-color: var(--color-linkedin-400);
+}
+
+.footer__networks:hover .icon-github {
+  background-color: var(--color-github-400);
 }
 
 .footer__copyright {
@@ -275,4 +303,3 @@ border-radius: var(--radius-md);
   font-size: clamp(0.9rem, 4vw, 1rem);
   color: var(--color-light-200);
 }
-

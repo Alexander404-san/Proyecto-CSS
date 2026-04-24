@@ -3,8 +3,6 @@
   position: relative;
 
   padding: 2.5rem 0;
-  background: var(--gd-hero);
-  background-size: 200% 200%;
 
   text-align: center;
   color: var(--color-light-100);
@@ -12,7 +10,7 @@
   border: 1px solid var(--color-primary-400);
   box-shadow: 0 0px 20px 20px var(--color-primary-033);
 
-  animation: gradientShift 10s ease-in-out infinite;
+  overflow: hidden;
 }
 
 @media (min-width: 480px) {
@@ -30,18 +28,12 @@
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: -50%;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: var(--gd-hero);
 
-  pointer-events: none;
+  z-index: -1;
+  animation: gradientShift-transform 10s ease-in-out infinite;
 }
 
 .hero__container {

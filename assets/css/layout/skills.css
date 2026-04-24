@@ -52,8 +52,7 @@
   grid-area: subtitle;
   grid-column: 1;
 
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin: 1rem 0 0;
 
   font-size: clamp(1.25rem, 5vw, 1.5rem);
   text-align: center;
@@ -119,6 +118,7 @@
 
   overflow: hidden;
   border-radius: var(--radius-md);
+  transform-origin: left;
   animation: fillProgress 1.5s ease-out forwards;
   animation-delay: calc(var(--index, 0) * 0.2s);
 }

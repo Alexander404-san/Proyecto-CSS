@@ -94,14 +94,17 @@
 @keyframes pulse-shadow-double {
   0%,
   100% {
-    box-shadow: 0px 0px 4px 0.75px var(--color-light-100), inset 0px 0px 4px 0.75px var(--color-light-100);
+    box-shadow:
+      0px 0px 4px 0.75px var(--color-light-100),
+      inset 0px 0px 4px 0.75px var(--color-light-100);
   }
 
   50% {
-    box-shadow: 0px 0px 8px 1.75px var(--color-light-100) , inset 0px 0px 8px 1.75px var(--color-light-100);
+    box-shadow:
+      0px 0px 8px 1.75px var(--color-light-100),
+      inset 0px 0px 8px 1.75px var(--color-light-100);
   }
 }
-
 
 @keyframes focusPulse {
   0%,
@@ -114,14 +117,9 @@
 }
 
 /* Animación de gradiente */
-@keyframes gradientShift {
-  0%,
-  100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+@keyframes gradientShift-transform {
+  0%, 100% { transform: translateX(-20%) translateY(-20%); }
+  50%       { transform: translateX(20%)  translateY(20%);  }
 }
 
 /* Animación de ola */
@@ -153,16 +151,15 @@
 /* Efecto de brillo en las barras */
 @keyframes shimmer {
   from {
-    left: -100%;
+    transform: translateX(-100%);
   }
   to {
-    left: 100%;
+    transform: translateX(100%);
   }
 }
 
 /* Barras de progreso animadas */
 @keyframes fillProgress {
-  from {
-    width: 0;
-  }
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
