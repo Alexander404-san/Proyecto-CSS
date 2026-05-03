@@ -3,7 +3,9 @@
 ========================= */
 :root {
   --bg: #0f172a;
-  --bg-secondary: #111827;
+  --bg-secondary: #1e1b4b;
+  --bg-input: #020617;
+  --bg-input-auto-fill: #040d32;
   --card: #1e293b;
   --border: #334155;
 
@@ -16,10 +18,12 @@
 
   --success: #22c55e;
   --error: #ef4444;
+  --focus-option: #3b82f640;
 
   --radius: 0.75rem;
   --transition: 0.25s ease;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --focus-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
 }
 
 /* =========================
@@ -294,10 +298,14 @@ textarea {
   padding: 0.6rem 0.75rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: #020617;
+  background: var(--bg-input);
   color: var(--text);
   outline: none;
   transition: var(--transition);
+}
+
+select {
+  appearance: base-select;
 }
 
 textarea {
@@ -309,7 +317,7 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+  box-shadow: var(--focus-shadow);
 }
 
 /* Foco en checkbox y radio — sin sombra para evitar blur */
@@ -320,7 +328,7 @@ input[type="radio"]:focus {
 
 /* Foco dentro de .form__options */
 .form__options label:focus-within {
-  background-color: rgba(59, 130, 246, 0.25);
+  background-color: var(--focus-option);
   border-radius: var(--radius);
   outline: 1px dashed var(--primary);
 }
@@ -335,26 +343,6 @@ textarea:user-valid {
 input:user-invalid,
 textarea:user-invalid {
   border-color: var(--error);
-}
-
-/* =========================
-   PASSWORD STRENGTH
-========================= */
-.password-strength {
-  height: 5px;
-  border-radius: 999px;
-  background: var(--border);
-  margin-top: 0.3rem;
-  overflow: hidden;
-}
-
-.password-strength::after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: red;
-  transition: var(--transition);
 }
 
 /* =========================
@@ -501,7 +489,7 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
   -webkit-text-fill-color: var(--text);
   transition: background-color 9999s ease-in-out 0s;
-  box-shadow: 0 0 0px 1000px #040d32 inset;
+  box-shadow: 0 0 0px 1000px var(--bg-input-auto-fill) inset;
 }
 
 /* Icono de date picker */
@@ -509,6 +497,10 @@ input::-webkit-calendar-picker-indicator {
   filter: invert(1);
   opacity: 0.8;
   cursor: pointer;
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  color: black;
 }
 
 input::-webkit-calendar-picker-indicator:hover {
