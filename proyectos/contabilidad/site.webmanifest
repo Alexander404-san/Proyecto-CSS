@@ -1,13 +1,13 @@
 {
-  "name": "Alexander Hernandez Portafolio",
-  "short_name": "Alexander Dev",
+  "name": "Despacho Contable Florez Hernández",
+  "short_name": "Conta Florez Hernandez",
   "lang": "es-SV",
   "dir": "ltr",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#fff000",
+  "theme_color": "#3a6399",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
